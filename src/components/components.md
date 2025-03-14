@@ -95,7 +95,7 @@ The `Button` component is a reusable, customizable button designed for React app
 - **Customizable Styling**: Accepts a `containerClass` prop to apply additional Tailwind CSS classes for tailored design.
 - **Icon Support**: Allows placement of left and right icons using `leftIcon` and `rightIcon` props.
 - **Dynamic Text**: Displays a title passed via the `title` prop with uppercase styling and an overflow-hidden effect.
-- **Accessibility**: Includes an `id` prop for unique identification.
+- **Accessibility**: Includes an `id` prop fo3r unique identification.
 
 ## Props
 - **`title` (string)**: The text displayed on the button (e.g., "Watch Trailer").

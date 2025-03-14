@@ -83,15 +83,33 @@ body{
     }
 
     .about-subtext {
-        @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
+        @apply absolute bottom-0 left-1/2 w-full max-w-96 -translate-x-1/2 text-center text-sm md:max-w-[40rem] p-4 font-circular-web leading-[1.2];
     }
 
     .about-image {
-        @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+        @apply relative z-20 h-[60vh] w-[30vw] overflow-hidden rounded-3xl md:h-[70vh] md:w-[40vw];
+    }
+
+    .about-image img {
+        @apply h-full w-full object-cover;
+    }
+
+    @media (min-width: 1024px) { /* Tailwind's 'lg' breakpoint */
+        .about-image {
+            min-width: 0; /* Override min-width to allow full expansion */
+        }
+        #clip {
+            padding: 0; /* Remove any padding */
+            margin: 0; /* Remove any margin */
+        }
+    }
+
+    #clip {
+        overflow-y: hidden;
     }
 
     .animated-title {
-        @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+        @apply flex flex-col gap-1 text-7xl uppercase leading-[.8]  sm:px-32 md:text-[6rem];
     }
 
     .animated-word {
