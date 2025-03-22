@@ -40,8 +40,8 @@ const About = () => {
                     Welcome to Zentry
                 </h2>
                 <AnimatedTitle
-                    title="Dis<b>o</b>ver the world's <br /> l<b>a</b>rgest shared adventure"
-                    containerClass="mt-5 !text-black text-center"
+                    title="Dis<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
+                    containerClass="mt-5 !text-black text-center special-font"
                 />
             </div>
 
